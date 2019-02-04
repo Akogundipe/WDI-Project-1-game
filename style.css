@@ -14,3 +14,23 @@
   align-items: center;
   background-color: yellow;
 }
+
+.square:after {
+  background-color: white;
+  height: 70px;
+  width: 70px;
+  margin-top: 10px;
+  margin-left: 10px;
+  justify-content: center;
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.square.red:after {
+  background-color: red;
+}
+
+.square.yellow:after {
+  background-color: yellow;
+}
