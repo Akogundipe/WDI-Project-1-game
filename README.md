@@ -9,13 +9,13 @@ Hand drawn
    - A list of the main technologies you plan to use.
 	- An explanation of the major problems you plan to face while implementing this game.
 	- An explanation of how you foresee yourself solving the aforementioned problems.
-  
+
   # Project Overview
 A 1 player connect four game. Drop pieces into columns one at a time. Four connecting pieces wins.
 
 ## Project Description
 
-Move the pieces into the columns. If four pieces match up, the player wins. It will use a series of arrays to determine win condition. Since the board is 6 x 7, it won't be difficult to list all the array combinations. 
+Move the pieces into the columns. If four pieces match up, the player wins. It will use a series of arrays to determine win condition. Since the board is 6 x 7, it won't be difficult to list all the array combinations.
 
 Technologies
 html - boilerplate, tables
@@ -42,5 +42,5 @@ for (row=0; row<=5; row++) {
 	gameboard[row] = [];
 		for (col=0; col<=6; col++) {
 		gameboard[row][col] = 0;
-		}	
-	}	
+		}
+	}
