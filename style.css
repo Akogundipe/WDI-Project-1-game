@@ -1,0 +1,16 @@
+#container {
+  display: grid;
+  grid-template-rows: 90px 90px 90px 90px 90px 90px;
+  grid-template-columns: 90px 90px 90px 90px 90px 90px 90px;
+  justify-content: center;
+  background-color: blue;
+  grid-gap: .5em;
+}
+
+.square {
+  display: grid;
+  justify-content: center;
+  border: 1px solid black;
+  align-items: center;
+  background-color: yellow;
+}
