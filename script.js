@@ -18,6 +18,20 @@ gameboard =  [[0,0 ],[ 0,1 ],[ 0,2 ],[ 0,3 ],[ 0,4 ],[ 0,5 ],[ 0,6 ],[
 ],[ 4,0 ],[ 4,1 ],[ 4,2 ],[ 4,3 ],[ 4,4 ],[ 4,5 ],[ 4,6 ],[
 ],[ 5,0 ],[ 5,1 ],[ 5,2 ],[ 5,3 ],[ 5,4 ],[ 5,5 ],[ 5,6 ]];
 
-const squares = document.querySelectorAll(".square");
+//squares is a node list with all the divs of the class 'square'
+let squares = document.querySelectorAll(".square");
+//turning squares node list into an array called nodesArray as found on https://davidwalsh.name/nodelist-array
+let nodesArray = Array.prototype.slice.call(squares);
+/* setting variables for a while loop
+while loop separates the nodesArray into a 2D array that matches the gameboard*/
+let tempArray;
+let twoDArray = [];
+
+while (nodesArray.length) {
+  tempArray = nodesArray.splice(nodesArray.length - 7, 7);
+  twoDArray.push(tempArray);
+}
+
+
 
 squares.forEach((square, index) => square.id = "square" + index);
