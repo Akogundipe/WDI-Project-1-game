@@ -31,6 +31,6 @@
   background-color: red;
 }
 
-.square.yellow:after {
-  background-color: yellow;
+.square.black:after {
+  background-color: black;
 }
