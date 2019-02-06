@@ -35,3 +35,4 @@ while (nodesArray.length) {
 
 
 squares.forEach((square, index) => square.id = "square" + index);
+//make whole board clickable (eventListener) then event.target at div i touched
