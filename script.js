@@ -31,10 +31,32 @@ board.addEventListener('click', (event) => {
     }
   });
 
+  /*twoDArray[0].forEach(function(element) {
+    console.log(element);
+    let counter = 0;
+    let discColor = currentPlayer;
+    if (discColor === currentPlayer) {
+      counter += 1;
+      return counter;
+      alert('uwni')
+    };
+  });*/
+
 for (let i = 0; i < twoDArray[0].length; i++) {
-  console.log(twoDArray[0][i])
-  if (twoDArray[0])
+  let counter = i;
+  let redPlayer = twoDArray[0].style.backgroundColor: "red";
+  let blackPlayer = twoDArray[0].style.backgroundColor: "black";
+}; if (counter = 4 && redPlayer === currentPlayer) {
+  alert('Red wins');
+} else if (counter = 4 && blackPlayer === currentPlayer) {
+  alert("Black wins");
 };
+  /*if (twoDArray[0][0] == i) {
+    if ((twoDArray[0][1] == i) && (twoDArray[0][2] == i) && (twoDArray[0][3] == i)) {
+      alert('win');
+    }
+  }
+
 
 /*const checkHorizontalWin = () => {
 for (let i = 0; i < twoDArray.length; i++) {
