@@ -24,15 +24,24 @@ board.addEventListener('click', (event) => {
   if (event.target.className === "square") {
     event.target.classList.add(`${currentPlayer}`);
   }
-  if (currentPlayer === "red") {
-    currentPlayer = "black";
-  } else {
-    currentPlayer = "red";
-  }
-});
-
+    if (currentPlayer === "red") {
+      currentPlayer = "black";
+    } else {
+      currentPlayer = "red";
+    }
+  });
 for (let i = 0; i < twoDArray.length; i++) {
   for (let j = 0; j < twoDArray[i].length; j++) {
-    twoDArray[i][j].classList[1] === twoDArray[i][j].classList[1]
-  }
-}
+    twoDArray[i][j].classList[1] === twoDArray[i][j].classList[1] +1 === twoDArray[i][j].classList[1] +2 === twoDArray[i][j].classList[1] +3;
+    console.log('u win');
+  };
+};
+
+
+
+
+
+
+
+
+//win condition horizontal

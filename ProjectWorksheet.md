@@ -49,3 +49,17 @@ SAMPLE.....
 
 	Listing all the array win conditions. Will be a challenge to implement how the AI moves. It will check for which array column spot is not occupied with a piece. I can set a certain time after human player drops the piece to give impression of AI thinking
 	It's a lot but it is enough to list. Not 100 win conditions or anything.
+
+	for (let i = 0; i < twoDArray.length; i++) {
+	  for (let j = 0; j < twoDArray[i].length; j++) {
+	  console.log(twoDArray)
+	  console.log('i', twoDArray[i])
+	  console.log('j', twoDArray[j])
+	  if(twoDArray[i][j].classList[0] === twoDArray[i][j].classList[0]) {
+	      console.log('this is true')
+	  } else if (twoDArray[i][j].classList[0] === twoDArray[i][j].classList[0]) {
+	    console.log('this is also true')
+	  }
+
+	  }
+	}
