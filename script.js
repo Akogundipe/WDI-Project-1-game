@@ -30,14 +30,29 @@ board.addEventListener('click', (event) => {
       currentPlayer = "red";
     }
   });
+
+for (let i = 0; i < twoDArray[0].length; i++) {
+  console.log(twoDArray[0][i])
+  if (twoDArray[0])
+};
+
+/*const checkHorizontalWin = () => {
 for (let i = 0; i < twoDArray.length; i++) {
-  for (let j = 0; j < twoDArray[i].length; j++) {
-    twoDArray[i][j].classList[1] === twoDArray[i][j].classList[1] +1 === twoDArray[i][j].classList[1] +2 === twoDArray[i][j].classList[1] +3;
+  for (let j = 0; j < twoDArray[i].length + 1; j++) {
+    console.log({twoDArray});
+    if (twoDArray[i][j] != 0 && twoDArray[i][j] === twoDArray[i][j+1] && twoDArray[i][j] === twoDArray[i][j+2] && twoDArray[i][j] === twoDArray[i][j+3]) {
+      console.log('hello from win condition')
+    }
+    /*twoDArray[i][j].classList[1] === twoDArray[i][j].classList[1]
     console.log('u win');
   };
 };
+};
+checkHorizontalWin();*/
 
 
+//twoDArray[0][0].classList[0] = "square"
+//twoDArray[0][0].classList[1] = "clicked square color"
 
 
 
