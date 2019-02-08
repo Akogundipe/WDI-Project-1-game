@@ -1,6 +1,6 @@
 ## Tic Tac Toe with Colors!
 
-<tic-tac-toe-with-colors-instead.surge.sh> 
+<http://tic-tac-toe-with-colors-instead.surge.sh> 
 
 ##  Project Overview
 A two player game using a computer mouse or touchpad.
