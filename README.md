@@ -1,6 +1,6 @@
 ## Tic Tac Toe with Colors!
 
-<http://tic-tac-toe-with-colors-instead.surge.sh> 
+<http://tic-tac-toe-with-colors-instead.surge.sh>
 
 ##  Project Overview
 A two player game using a computer mouse or touchpad.
@@ -21,6 +21,14 @@ MVP: Two player game that starts when button is pressed. Clickable squares to pl
 None used
 
 ## Code Snippet
+```
+const checkForWin = () => {
+  if (squares[0].className === squares[1].className && squares[0].className === squares[2].className && squares[0].className == "square black" && squares[1].className == "square black" && squares[2].className == "square black") {
+    alert("Black wins");
+    board.adremoveentListener('click', clickFunction);
+  } else if
+  ...
+  ```
 
-Issues and Resolutions
+## Issues and Resolutions
 Check for win function was difficult. I had to act a lot of guard operators.
