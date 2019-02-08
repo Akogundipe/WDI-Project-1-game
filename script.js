@@ -29,56 +29,50 @@ board.addEventListener('click', (event) => {
     } else {
       currentPlayer = "red";
     }
+    checkForWin();
   });
 
-  /*twoDArray[0].forEach(function(element) {
-    console.log(element);
-    let counter = 0;
-    let discColor = currentPlayer;
-    if (discColor === currentPlayer) {
-      counter += 1;
-      return counter;
-      alert('uwni')
-    };
-  });*/
+let redPlayer = document.getElementsByClassName('square red');
+let blackPlayer = document.getElementsByClassName('square black');
+let counter = 0;
 
-for (let i = 0; i < twoDArray[0].length; i++) {
-  let counter = i;
-  let redPlayer = twoDArray[0].style.backgroundColor: "red";
-  let blackPlayer = twoDArray[0].style.backgroundColor: "black";
-}; if (counter = 4 && redPlayer === currentPlayer) {
-  alert('Red wins');
-} else if (counter = 4 && blackPlayer === currentPlayer) {
-  alert("Black wins");
-};
-  /*if (twoDArray[0][0] == i) {
-    if ((twoDArray[0][1] == i) && (twoDArray[0][2] == i) && (twoDArray[0][3] == i)) {
-      alert('win');
-    }
+let starter = document.getElementById('startButton');
+
+starter.addEventListener('click', (event) => {
+  squares.forEach((square) => {
+    square.classList.remove("black", "red");
+  });
+});
+
+const checkForWin = () => {
+  if (squares[0].className === squares[1].className && squares[0].className === squares[2].className && squares[0].className == "square black" && squares[1].className == "square black" && squares[2].className == "square black") {
+    alert("Black wins")
+  } else if (squares[3].className === squares[4].className && squares[3].className === squares[5].className && squares[3].className == "square black" && squares[4].className == "square black" && squares[5].className == "square black") {
+    alert("Black wins")
+  } else if (squares[6].className === squares[7].className && squares[6].className === squares[8].className && squares[6].className == "square black" && squares[7].className == "square black" && squares[8].className == "square black") {
+    alert("Black wins")
+  } else if (squares[0].className === squares[3].className && squares[0].className === squares[6].className && squares[0].className == "square black" && squares[3].className == "square black" && squares[6].className == "square black") {
+    alert("Black wins")
+  } else if (squares[1].className === squares[4].className && squares[1].className === squares[7].className && squares[1].className == "square black" && squares[4].className == "square black" && squares[7].className == "square black") {
+    alert("Black wins")
+  } else if (squares[2].className === squares[5].className && squares[2].className === squares[8].className && squares[2].className == "square black" && squares[5].className == "square black" && squares[8].className == "square black") {
+    alert("Black wins")
+  } else if (squares[0].className === squares[4].className && squares[0].className === squares[8].className && squares[0].className == "square black" && squares[4].className == "square black" && squares[8].className == "square black") {
+    alert("Black wins")
+  } else if (squares[2].className === squares[4].className && squares[2].className === squares[6].className && squares[2].className == "square black" && squares[4].className == "square black" && squares[6].className == "square black") {
+    alert("Black wins")
   }
+}
 
 
-/*const checkHorizontalWin = () => {
-for (let i = 0; i < twoDArray.length; i++) {
-  for (let j = 0; j < twoDArray[i].length + 1; j++) {
-    console.log({twoDArray});
-    if (twoDArray[i][j] != 0 && twoDArray[i][j] === twoDArray[i][j+1] && twoDArray[i][j] === twoDArray[i][j+2] && twoDArray[i][j] === twoDArray[i][j+3]) {
-      console.log('hello from win condition')
-    }
-    /*twoDArray[i][j].classList[1] === twoDArray[i][j].classList[1]
-    console.log('u win');
-  };
-};
-};
-checkHorizontalWin();*/
+
+
+//document.querySelector('.column').children
+    //loop through the HTMLcollection
+    //write conditionals to check the row is square red or square black
+    //counter increment and current player then see if it equals 4
+
 
 
 //twoDArray[0][0].classList[0] = "square"
 //twoDArray[0][0].classList[1] = "clicked square color"
-
-
-
-
-
-
-//win condition horizontal
