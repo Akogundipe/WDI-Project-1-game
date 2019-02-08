@@ -1,6 +1,8 @@
 ## Tic Tac Toe with Colors!
 
-  # Project Overview
+<tic-tac-toe-with-colors-instead.surge.sh> 
+
+##  Project Overview
 A two player game using a computer mouse or touchpad.
 
 ## Project Description
@@ -21,4 +23,4 @@ None used
 ## Code Snippet
 
 Issues and Resolutions
-Thinking is hard. Switched from Connect Four to Tic Tac Toe.
+Check for win function was difficult. I had to act a lot of guard operators.
